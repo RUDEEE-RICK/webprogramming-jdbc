@@ -10,9 +10,9 @@ if(isset($_SESSION['account'])){
     header('location: login.php');
 }
 
-require_once('functions.php');
-require_once('product.class.php');
-require_once('stocks.class.php');
+require_once('../tools/functions.php');
+require_once('../classes/product.class.php');
+require_once('../classes/stocks.class.php');
 
 $name = $quantity = $status = $reason = '';
 $quantityErr = $statusErr = $reasonErr = '';
